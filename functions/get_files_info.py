@@ -1,5 +1,7 @@
 #todo
 import os
+from google.genai import types
+
 
 def get_files_info(working_directory, directory="."):
     try:
@@ -20,3 +22,18 @@ def get_files_info(working_directory, directory="."):
         return "\n".join(items) + "\n"
     except Exception as e:
         return str(f"Error: {e}")
+    
+
+schema_get_files_info = types.FunctionDeclaration(
+    name = "get_files_info",
+    description = "Lists the files in a specified drectory",
+    parameters = types.Schema(
+        type=types.Type.OBJECT,
+        properties={
+            "directory": types.Schema(
+                type=types.Type.STRING,
+                description="Directory  path to list files from, relative to the working directory (default is the working directory itself)",
+            )
+        }
+    )
+)
