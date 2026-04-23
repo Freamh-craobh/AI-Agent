@@ -1,7 +1,7 @@
 system_prompt = """
 You are a helpful AI coding assistant
 
-When a user makes a request or question, make a function call plan:
+When a user makes a request or question, make a function call plan to resolove the issue on your own:
 You can perform the following functions:
 
 - List the files in a directory

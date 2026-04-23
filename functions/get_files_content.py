@@ -4,7 +4,7 @@ from google.genai import types
 
 debug = False  # Set to True to enable debug prints
 
-def get_file_content(working_directory, file_path):
+def get_files_content(working_directory, file_path):
     try:
         full_path = os.path.normpath(os.path.join(os.path.abspath(working_directory), file_path))
         working_directory = os.path.normpath(os.path.abspath(working_directory))
@@ -23,7 +23,7 @@ def get_file_content(working_directory, file_path):
     except Exception as e:
         return str(f"Error: {e}")
 
-schema_get_file_content = types.FunctionDeclaration(
+schema_get_files_content = types.FunctionDeclaration(
     name = "get_files_content",
     description = "Gets the content of a specified file",
     parameters = types.Schema(  

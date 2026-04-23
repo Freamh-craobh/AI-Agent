@@ -1,14 +1,14 @@
 import os
 import types
 from google.genai import types
-from .get_file_content import get_file_content
+from .get_files_content import get_files_content
 from .get_files_info import get_files_info
 from .run_python_file import run_python_file
 from .write_file import write_file
 
 
 function_map={
-    "get_file_content":get_file_content,
+    "get_files_content":get_files_content,
     "get_files_info":get_files_info,
     "run_python_file":run_python_file,
     "write_file":write_file
