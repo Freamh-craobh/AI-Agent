@@ -1,11 +1,22 @@
-This is an AI agentic model designed to read, evalutate and modify code to fix bugs, update programs etc.
-Built on Gemini-2.5-flash using python code (Calculator code for testing purposes)
+# AI-Agent
+An AI agentic model designed to read, evaluate, and modify code to fix bugs, update programs, and more.
 
-run with prompt as arg, optional --verbose arg to print function calls
+Overview
+This project demonstrates an AI agent built on Gemini-2.5-flash using Python. It includes calculator code for testing purposes.
 
-Please do not use this code as is, it is a proof of concept and does not have the necessary security restrictions in place for full use.
+! Security Warning: This is a proof of concept. Please do not use this code as-is in production—it does not have the necessary security restrictions in place for full use.
 
-Use in a virtual environment.
+Prerequisites
+Python 3.8+
+A virtual environment
+API key for Gemini-2.5-flash
 
-created by
-Oisin Duke O'Neill
+Installation
+
+Clone the repository
+Create and activate a virtual environment:
+
+<code>
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+</code>
